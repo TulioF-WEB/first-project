@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Main Container */
+#container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Contact Form Section */
+#contact-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+#contact-title {
+    color: #2323fb;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+#contact-heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#contact-form form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#schedule-btn {
+    background-color: #2234ff;
+    color: #fff;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#schedule-btn:hover {
+    background-color: #1625f9;
+}
+
+/* FAQ Section */
+#faq-section {
+    flex: 1;
+    padding: 2rem;
+}
+
+#faq-title {
+    color: #182bff;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+#faq-heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#faq-items details {
+    border-bottom: 1px solid #ddd;
+    padding: 0.8rem 0;
+}
+
+#faq-items summary {
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#faq-items p {
+    margin-top: 0.5rem;
+    color: #666;
+    font-size: 0.95rem;
+}
+.appointment-btn {
+    display: none;
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Docmed</div>
+        <nav class="nav">
+            <a href="../index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="pages/appointment.html">FAQ</a>
+            <a href="#">Doctors</a>
+            <a href="#">Contact</a>
+        </nav>
+        <a href="appointment.html">
+            <button class="appointment-btn">Make An Appointment</button>
+            </a>
+    </header>
+    <div id="container">
+        <!-- Contact Form -->
+        <div id="contact-form">
+            <h4 id="contact-title">CONTACT US</h4>
+            <h1 id="contact-heading">Make Appointment</h1>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="Phone">
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" placeholder="Write message..."></textarea>
+
+                <button id="schedule-btn" type="submit">Schedule Appointment</button>
+            </form>
+        </div>
+
+        <!-- FAQ Section -->
+        <div id="faq-section">
+            <h4 id="faq-title">ASKED QUESTIONS</h4>
+            <h1 id="faq-heading">Frequently Asked Questions</h1>
+            <div id="faq-items">
+                <details open>
+                    <summary>What is the best way to schedule an appointment?</summary>
+                    <p>Please use the form at your left or contact us directly through our registered lines.</p>
+                </details>
+                <details>
+                    <summary>What are the recommendations for appointments?</summary>
+                    <p>Please try to always arrive at least 5 minutes prior to your schedule to make sure we can follow it properly.</p>
+                </details>
+                <details>
+                    <summary>How can i improve/change my room?</summary>
+                    <p>Please contact us directly at the reception with your documents in hand to proceed with any change.</p>
+                </details>
+                <details>
+                    <summary>How long does blood exams usually take to get ready?</summary>
+                    <p>Blood exams period may vary from 2-9 business days depending on the type of exam conducted.</p>
+                </details>
+                <details>
+                    <summary>Can i visit a patient who has undergone surgery recently?</summary>
+                    <p>Patients are allowed up to 4 visitors per day after a surgery, with time varying depending on the severity of the case.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="https://img.freepik.com/premium-vector/medical-logo-template_1283348-17168.jpg?semt=ais_hybrid" alt="Logo Placeholder">
+                <div class="footer-text">
+                    <h3>Docmed</h3>
+                    <p>Medical Center</p>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="footer-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="pages/services.html">Services</a></li>
+                <li><a href="pages/appointment.html">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social">
+                <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright">
+            <p>&copy; Copyright 2024 - Docmed</p>
+        </div>
+    </footer>
+</body>
+</html>
