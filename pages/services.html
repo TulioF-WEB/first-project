@@ -6,38 +6,137 @@
     <title>Services</title>
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: Arial, sans-serif;
+        }
+    
+        body {
+          background-color: #fdfcfa;
+          color: #472a2a;
+          line-height: 1.6;
+        }
+    
+        #container-nd {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          max-width: 1200px;
+          margin: 2rem auto;
+          padding: 1rem;
+        }
+    
+        #section-nd {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 2rem;
+        }
+    
+        #section-nd img {
+          width: 100%;
+          max-width: 450px;
+          height: auto;
+          border-radius: 1rem;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    
+        #text-content-nd {
+          max-width: 500px;
+        }
+    
+        h2 {
+          font-size: 2rem;
+          color: #3d1c1c;
+          margin-bottom: 0.5rem;
+        }
+    
+        p {
+          margin-bottom: 1rem;
+          color: #5e4c4c;
+        }
+    
+        a {
+          color: #281ef1;
+          font-weight: bold;
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+        }
+        /* Alternate layout for reverse */
+        #reverse-nd {
+          flex-direction: row-reverse;
+        }
+    
+        @media (max-width: 768px) {
+          #section-nd {
+            flex-direction: column;
+            text-align: center;
+          }
+          #reverse-nd {
+            flex-direction: column;
+          }
+        }
+      </style>
 </head>
 <body>
     <header class="header">
-        <div class="logo">Docmed</div>
+        <div class="logo" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold;">Docmed</div>
         <nav class="nav">
             <a href="../index.html">Home</a>
             <a href="services.html">Services</a>
             <a href="appointment.html">FAQ</a>
-            <a href="#">Doctors</a>
-            <a href="#">Contact</a>
+            <a href="contact.html">Contact</a>
         </nav>
         <button class="appointment-btn">Make an Appointment</button>
     </header>
-    
+  <body>
+    <div id="container-nd">
+      <!-- First Section -->
+      <div id="section-nd">
+        <div id="text-content-nd">
+          <h2>Blood exams <br> Routine exams</h2>
+          <p>
+        Take your exams and have them done with the utmost care and efficiency in the market, while retaining a fast delivery with very good accessibility!
+          </p>
+          <a href="#">Read More</a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1655210913810-33acfa96d1e6?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blood Exams">
+      </div>
+  
+      <!-- Second Section -->
+      <div id="section-nd" id="reverse-nd">
+        <div id="text-content-nd">
+          <h2>Tired of your usual clinic look? <br>Choose a room!</h2>
+          <p>
+         Don't want to see white everywhere you look while resting? Our hospital provides different room layouts to fit all tastes!
+          </p>
+          <a href="#">Read More</a>
+        </div>
+        <img src="https://media.istockphoto.com/id/1425629516/photo/modern-luxury-hospital-room-with-empty-bed-armchair-lcd-television-and-cityscape-from-the.jpg?s=612x612&w=0&k=20&c=I2QiOtuglKFDKcgdQ_Q_Z6LVu2lvg7pBhMb8C97Zl84=" alt="Your Room">
+      </div>
+    </div>
     <footer class="footer">
         <div class="footer-container">
-            <!-- Logo Section -->
+            <!-- Logo -->
             <div class="footer-logo">
-                <img src="https://img.freepik.com/premium-vector/medical-logo-template_1283348-17168.jpg?semt=ais_hybrid" alt="Logo Placeholder">
+                <img src="https://img.freepik.com/premium-vector/medical-logo-template_1283348-17168.jpg?semt=ais_hybrid" alt="Logo">
                 <div class="footer-text">
                     <h3>Docmed</h3>
                     <p>Medical Center</p>
                 </div>
             </div>
 
-            <!-- Navigation Links -->
+            <!-- Nav for footer-->
             <ul class="footer-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="#">Services</a></li>
-                <li><a href="pages/appointment.html">FAQ</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="appointment.html">FAQ</a></li>
             </ul>
 
             <!-- Social Media Icons -->
@@ -56,7 +155,6 @@
                 </a>
             </div>
         </div>
-        <!-- Copyright -->
         <div class="footer-copyright">
             <p>&copy; Copyright 2024 - Docmed</p>
         </div>

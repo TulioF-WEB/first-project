@@ -1,0 +1,2 @@
+Brief project of a small scale example of medical website with basic features such as navigation, appointment form, FAQ, buttons and images with various CSS styling features.
+Made by Tulio Ferraro de Macedo as part of a mock project for Web Developer course.

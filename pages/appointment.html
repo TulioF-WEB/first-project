@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-        /* Main Container */
+        /* Central Container */
 #container {
     display: flex;
     justify-content: space-between;
@@ -17,7 +17,7 @@
     margin: 0 auto;
 }
 
-/* Contact Form Section */
+/* Contact Form */
 #contact-form {
     background-color: #fff;
     padding: 2rem;
@@ -104,17 +104,19 @@
 .appointment-btn {
     display: none;
 }
+textarea {
+    resize: none; /* No resizing */
+}
     </style>
 </head>
 <body>
     <header class="header">
-        <div class="logo">Docmed</div>
+        <div class="logo" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold;">Docmed</div>
         <nav class="nav">
             <a href="../index.html">Home</a>
             <a href="services.html">Services</a>
-            <a href="pages/appointment.html">FAQ</a>
-            <a href="#">Doctors</a>
-            <a href="#">Contact</a>
+            <a href="appointment.html">FAQ</a>
+            <a href="contact.html">Contact</a>
         </nav>
         <a href="appointment.html">
             <button class="appointment-btn">Make An Appointment</button>
@@ -123,7 +125,7 @@
     <div id="container">
         <!-- Contact Form -->
         <div id="contact-form">
-            <h4 id="contact-title">CONTACT US</h4>
+            <h4 id="contact-title">APPOINTMENTS</h4>
             <h1 id="contact-heading">Make Appointment</h1>
             <form>
                 <label for="name">Name</label>
@@ -137,6 +139,19 @@
 
                 <label for="message">Message</label>
                 <textarea id="message" rows="4" placeholder="Write message..."></textarea>
+
+                <label for="appointment-date">Appointment Date & Time</label>
+                <input type="datetime-local" id="appointment-date" name="appointment-date" required>
+                
+                <!-- Dropdown -->
+                <label for="reason">Reason for Appointment</label>
+                <select id="reason" name="reason" required>
+                    <option value="" disabled selected>Select reason</option>
+                    <option value="consultation">Consultation</option>
+                    <option value="follow-up">Follow-Up/Exam Delivery</option>
+                    <option value="exam">Exam</option>
+                    <option value="general">General Inquiry</option>
+                </select>
 
                 <button id="schedule-btn" type="submit">Schedule Appointment</button>
             </form>
@@ -172,7 +187,7 @@
     </div>
     <footer class="footer">
         <div class="footer-container">
-            <!-- Logo Section -->
+            <!-- Logo -->
             <div class="footer-logo">
                 <img src="https://img.freepik.com/premium-vector/medical-logo-template_1283348-17168.jpg?semt=ais_hybrid" alt="Logo Placeholder">
                 <div class="footer-text">
@@ -181,16 +196,15 @@
                 </div>
             </div>
 
-            <!-- Navigation Links -->
+            <!-- Nav-->
             <ul class="footer-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="pages/services.html">Services</a></li>
-                <li><a href="pages/appointment.html">FAQ</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="appointment.html">FAQ</a></li>
             </ul>
 
-            <!-- Social Media Icons -->
+            <!-- Social Media -->
             <div class="footer-social">
                 <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
                     <i class="fab fa-facebook-f"></i>
