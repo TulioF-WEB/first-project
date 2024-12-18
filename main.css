@@ -44,19 +44,15 @@ body {
 
 .nav a {
     text-decoration: none;
-    color: #555;
+    color: #313030;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 nav a:visited {
-    color: purple; /* Changes visited links in the nav element to purple */
+    color: purple; /* Changes visited links to purple */
 }
 .nav a:hover {
     color: #3b82f6;
-}
-
-.nav a:not(:nth-child(3))::after {
-    content: "";
 }
 
 .appointment-btn {
@@ -250,7 +246,7 @@ nav a:visited {
     color: #0408f4; /* Highlight color */
 }
 
-/* Copyright Section */
+/* copyright Section */
 .footer-copyright {
     margin-top: 1rem;
     border-top: 1px solid #333;
